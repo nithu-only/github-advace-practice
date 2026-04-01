@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login Page</title>
+    <meta charset="UTF-8">
+    <title>Modern Login</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Login</h2>
-    
-    <!-- The form is a container for all input elements -->
-    <form action="/login_processor" method="POST">
-        <!-- Input field for username or email -->
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br><br>
-        
-        <!-- Input field for password (characters are masked) -->
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br><br>
-        
-        <!-- Submit button -->
-        <button type="submit">Log In</button>
-    </form>
+    <div class="login-card">
+        <h2>Login</h2>
+        <form id="loginForm" action="/login_processor" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <small id="error-msg"></small>
+            </div>
+            
+            <button type="submit">Log In</button>
+        </form>
+    </div>
 
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
-
