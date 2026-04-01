@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+    <h2>Login</h2>
+    
+    <!-- The form is a container for all input elements -->
+    <form action="/login_processor" method="POST">
+        <!-- Input field for username or email -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        
+        <!-- Input field for password (characters are masked) -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        
+        <!-- Submit button -->
+        <button type="submit">Log In</button>
+    </form>
+
+</body>
+</html>
+
